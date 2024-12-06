@@ -13,7 +13,7 @@ function Home() {
   const [programs, setPrograms] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/v1/programs")
+    fetch("/api/v1/programs")
       .then((parsed) => parsed.json())
       .then((res) => {
         if (res?.success) {

@@ -74,7 +74,7 @@ function Player() {
   useEffect(() => {
     if (!audioId) return;
     else console.log(audioId);
-    fetch(`http://localhost:3000/api/v1/track/${audioId}`)
+    fetch(`/api/v1/track/${audioId}`)
       .then((parsed) => parsed.json())
       .then((res) => {
         if (res?.success) {

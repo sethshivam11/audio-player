@@ -16,7 +16,7 @@ function Program() {
   });
 
   useEffect(() => {
-    fetch(`http://localhost:3000/api/v1/programDetails/${programId}`)
+    fetch(`/api/v1/programDetails/${programId}`)
       .then((parsed) => parsed.json())
       .then((res) => {
         if (res?.success) {
